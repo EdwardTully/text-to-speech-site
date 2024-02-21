@@ -17,7 +17,7 @@ function Article(props) {
         value.pitch= 1
         value.voice = sound
         synth.speak(value)
-        console.log(sound)
+        
     }
     const handlePause=()=>{
       synth.pause()
