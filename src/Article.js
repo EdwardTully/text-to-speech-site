@@ -8,8 +8,8 @@ function Article() {
     const text = pHistory
     const synth = window.speechSynthesis
     const voices = synth.getVoices()
-    const sound = voices[0]
-    
+    const sound = voices[2]
+
     const handleClick=()=>{
         
         const value = new SpeechSynthesisUtterance(text)

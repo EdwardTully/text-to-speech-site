@@ -7,9 +7,7 @@ function App() {
   const synth = window.speechSynthesis
   const voices = synth.getVoices()
  
-  const eventHandler=()=>{
-    console.log('hell yeah')
-  }
+ 
 
   return (
     <div className="App">
