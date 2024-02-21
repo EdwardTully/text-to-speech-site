@@ -3,12 +3,12 @@ import React from 'react'
 import pHistory from './pachinko'
 
 
-function Article() {
+function Article(props) {
 
     const text = pHistory
     const synth = window.speechSynthesis
     const voices = synth.getVoices()
-    const sound = voices[2]
+    const sound = voices[props.voice]
 
     const handleClick=()=>{
         
@@ -17,6 +17,7 @@ function Article() {
         value.pitch= 1
         value.voice = sound
         synth.speak(value)
+        console.log(sound)
     }
     const handlePause=()=>{
       synth.pause()

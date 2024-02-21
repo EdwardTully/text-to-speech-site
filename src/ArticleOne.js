@@ -3,12 +3,12 @@ import React from 'react'
 import lantern from './coleman'
 
 
-function ArticleOne() {
+function ArticleOne(props) {
 
     const text = lantern
     const synth = window.speechSynthesis
     const voices = synth.getVoices()
-    const sound = voices[2]
+    const sound = voices[props.voice]
     
     const handleClick=()=>{
       
