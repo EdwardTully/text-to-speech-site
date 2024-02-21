@@ -6,7 +6,7 @@ import './App.css';
 
 function App() {
   const synth = window.speechSynthesis
-  const voices = []
+  const voices = ''
   const pullVoices=async()=>{
    const voices = synth.getVoices()
     return voices
