@@ -6,11 +6,12 @@ import './App.css';
 
 function App() {
   const synth = window.speechSynthesis
+  const[voice, setVoice]= useState('')
   const voices = synth.getVoices()
  
   
  // useEffect(()=>pullVoices)
-  const[voice, setVoice]= useState('')
+  
 
  
 
