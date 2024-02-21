@@ -9,7 +9,7 @@ function App() {
   const[voice, setVoice]= useState('')
   const voices = synth.getVoices()
  
-  
+  console.log(voices)
  // useEffect(()=>pullVoices)
   
 
