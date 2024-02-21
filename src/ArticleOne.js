@@ -1,11 +1,11 @@
 import React from 'react'
 
-import pHistory from './pachinko'
+import lantern from './coleman'
 
 
-function Article() {
+function ArticleOne() {
 
-    const text = pHistory
+    const text = lantern
     const synth = window.speechSynthesis
     const voices = synth.getVoices()
     const sound = voices[0]
@@ -30,7 +30,7 @@ function Article() {
 
   return (
     <div>
-        <h1>Pachinko Machine History</h1>
+        <h1>The Coleman Lantern</h1>
         <div class='Atext'>{text}</div>
         <button onClick = {handleClick}>Play</button>
         <button onClick = {handlePause}>Pause</button>
@@ -40,4 +40,4 @@ function Article() {
   )
 }
 
-export default Article
+export default ArticleOne

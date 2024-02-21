@@ -1,0 +1,3 @@
+const pHistory = '  There are different stories about the origin of the “modern type” of pachinko.It was believed to have originated in the game machines imported from Europe and the United States, such as the “Corinth Game” and “Bagatelle,” between 1912 and 1926. However, recently it was found that there had been vertically-placed game machines, just like pachinko machines, across Europe, which were not “table-based” game machines. Currently, it is commonly believed that pachinko originated from such game machines.'
+
+export default pHistory

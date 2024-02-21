@@ -1,0 +1,3 @@
+const lantern = '   In 1900, William Coffin Coleman was selling high pressure gasoline fueled lamps. These lamps, notably The Efficient Pendant Arc lamp No. 6, were manufactured by Irby & Gilliland in Memphis, Tennessee. However, poor sales led him to acquire the patent for the lamp and redesign it. He began to produce the lamp in 1903, and in 1914 he introduced the Coleman Lantern, a design incorporating various improvements, such as bug-screen and flat base.'
+
+export default lantern
