@@ -1,18 +1,15 @@
 import React, {useState} from 'react'
-import { useEffect } from 'react';
+//import { useEffect } from 'react';
 import Article from './Article';
 import ArticleOne from './ArticleOne';
 import './App.css';
 
 function App() {
   const synth = window.speechSynthesis
-  const voices = ''
-  const pullVoices=async()=>{
-   const voices = synth.getVoices()
-    return voices
-  }
+  const voices = synth.getVoices()
+ 
   
-  useEffect(()=>pullVoices)
+ // useEffect(()=>pullVoices)
   const[voice, setVoice]= useState('')
 
  
