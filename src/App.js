@@ -9,13 +9,13 @@ function App() {
   const [voice, setVoice] = useState("");
   const [voiceArry, setVoiceArry] = useState([])
   
-  const pullvoices=async ()=>{
+  const pullvoices= ()=>{
    let voices = synth.getVoices();
    let voiceFilt = voices.filter((ea)=>ea.localService !== false)
     setVoiceArry(voiceFilt)
   }
    
-  
+  //eslint-disable-next-line
   useEffect(()=>{pullvoices()},[])
   console.log(voiceArry);
 
