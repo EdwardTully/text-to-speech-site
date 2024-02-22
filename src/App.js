@@ -22,11 +22,7 @@ function App() {
   return (
     <div className="App">
     
-
-      <Article voice={voice} />
-      <ArticleOne voice={voice} />
-
-      <h1>Select Readback Voice</h1>
+    <h1>Readback Voice</h1>
       <select
         id="selVoice"
         name="selVoice"
@@ -36,6 +32,10 @@ function App() {
           <option value={index}>{`${ea.voiceURI} ${index}`}</option>
         ))}
       </select>
+      <Article voice={voice} />
+      <ArticleOne voice={voice} />
+
+
     </div>
   );
 }

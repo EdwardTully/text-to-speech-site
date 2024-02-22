@@ -1,6 +1,6 @@
 import React from 'react'
 
-import lantern from './coleman'
+import lantern from './textSources/roosevelt'
 
 
 function ArticleOne(props) {
@@ -30,7 +30,7 @@ function ArticleOne(props) {
 
   return (
     <div>
-        <h1>The Coleman Lantern</h1>
+        <h1>Teddy Roosevelt</h1>
         <div class='Atext'>{text}</div>
         <button onClick = {handleClick}>Play</button>
         <button onClick = {handlePause}>Pause</button>

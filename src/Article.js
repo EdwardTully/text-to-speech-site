@@ -1,6 +1,6 @@
 import React from 'react'
 
-import pHistory from './pachinko'
+import pHistory from './textSources/lincoln'
 
 
 function Article(props) {
@@ -13,8 +13,8 @@ function Article(props) {
     const handleClick=()=>{
         
         const value = new SpeechSynthesisUtterance(text)
-        value.rate = 0.8
-        value.pitch= 1
+        value.rate = 0.7
+        value.pitch= 0.8
         value.voice = sound
         synth.speak(value)
         
@@ -31,7 +31,7 @@ function Article(props) {
 
   return (
     <div>
-        <h1>Pachinko Machine History</h1>
+        <h1>Gettysburg Address, A. Lincoln</h1>
         <div class='Atext'>{text}</div>
         <button onClick = {handleClick}>Play</button>
         <button onClick = {handlePause}>Pause</button>
